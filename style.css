@@ -44,7 +44,7 @@
   display: flex;
 }
 
-.tasks {
+.tasks__list {
   margin: 0;
   padding: 0px;
 }
@@ -145,36 +145,32 @@ button:hover {
   width: 226px;
 }
 
-.tasks__item .button--delete .button__img:hover {
-  color: #cf2323;
-}
-
-.button--delete .button__img {
+.button__img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
 
-.button--delete .button__img:hover {
+.button__img:hover {
   transform: rotateZ(0);
 }
 
 /* Completed */
-.tasks#completed-tasks label {
+#completed-tasks .tasks__name {
   text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
-.tasks__item .tasks__text {
+.tasks__text {
   display: none;
 }
 
-.tasks__item.tasks__item--editMode .tasks__text {
+.tasks__item--editMode .tasks__text {
   display: inline-block;
   width: 224px;
 }
 
-.tasks__item.tasks__item--editMode .tasks__name {
+.tasks__item--editMode .tasks__name {
   display: none;
 }
