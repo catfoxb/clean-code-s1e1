@@ -4,24 +4,30 @@
   color: #333;
   font-family: Lato, sans-serif;
 }
+
 .top-line {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
+
 .top-line__img {
   width: 100%;
 }
+
 .top-line__more-inf {
   font-family: fantasy, cursive;
 }
 
 @media (max-width:768px) {
+  
   .top-line { 
     text-align: center;
   }
+
 }
+
 .main-content {
   display: block;
   width: 500px;
@@ -33,9 +39,11 @@
   display: inline-block;
   flex-grow: 1
 }
+
 .add-element__wrapper {
   display: flex;
 }
+
 .tasks {
   margin:0;
   padding: 0px;
@@ -44,6 +52,7 @@
 input,button{
   outline:none;
 }
+
 .button {
   background: none;
   border: 0px;
@@ -53,9 +62,11 @@ input,button{
   font-family: Lato, sans-serif;
   cursor: pointer;
 }
+
 button:hover {
   color: #3a3a3a;
 }
+
 /* Heading */
 .main-conten__title,
 .add-element__title {
@@ -67,6 +78,7 @@ button:hover {
   margin: 0;
   text-transform: uppercase;
 }
+
 .tasks__text,
 .add-element__task {
   margin: 0;
@@ -80,6 +92,7 @@ button:hover {
   font-family: Lato, sans-serif;
   color: #888;
 }
+
 .tasks__text:focus,
 .add-element__task:focus {
   color: #333;
@@ -90,6 +103,7 @@ button:hover {
   display: block;
   margin: 0 0 20px;
 }
+
 .add-element__task {
   width: 318px;
 
@@ -97,6 +111,7 @@ button:hover {
   display: inline-block;
   flex-grow: 1
 }
+
 .button--new-edit:hover {
   color: #0fc57c;
 }
@@ -106,7 +121,6 @@ button:hover {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -115,27 +129,31 @@ button:hover {
 .tasks__checkbox {
   margin: 0 10px;
 }
+
 .tasks__name {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
-
   width: 56%;
   display: inline-block;
   flex-grow: 1;
 }
+
 .tasks__text {
   width: 226px
 }
+
 .tasks__item .button--delete .button__img:hover {
   color: #cf2323;
 }
+
 .button--delete .button__img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
+
 .button--delete .button__img:hover {
   transform: rotateZ(0);
 }
